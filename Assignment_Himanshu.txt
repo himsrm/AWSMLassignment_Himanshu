@@ -1,0 +1,36 @@
+yes, The input string in amazon polly is equal to output string producd in amazon transcribe.
+
+Request:
+
+{
+    "TranscriptionJobName": "awstransribe",
+    "LanguageCode": "en-US",
+    "MediaSampleRateHertz": 22050,
+    "MediaFormat": "mp3",
+    "Media": {
+        "MediaFileUri": "https://s3.amazonaws.com/awsmlbket/speech_20180620111512864.mp3"
+    }
+}
+
+Response:
+
+{
+    "TranscriptionJob": {
+        "TranscriptionJobName": "awstransribe",
+        "TranscriptionJobStatus": "COMPLETED",
+        "LanguageCode": "en-US",
+        "MediaSampleRateHertz": 22050,
+        "MediaFormat": "mp3",
+        "Media": {
+            "MediaFileUri": "https://s3.amazonaws.com/awsmlbket/speech_20180620111512864.mp3"
+        },
+        "Transcript": {
+            "TranscriptFileUri": "https://s3.amazonaws.com/aws-transcribe-us-east-1-prod/180274030566/awstransribe/asrOutput.json?X-Amz-Security-Token=FQoDYXdzECQaDErieNWK8CdCM%2Bc9BiK3A6qVdGoS3uNQ2IAWwvsiccl1d6PfpQuZGG2i1ZrrYEnfE2S5bw0UyvNAe6H%2FEB6bMFaMJbIbh3FSWRh6PWS0PyDBg3KKjbZk2774vaPPVXcMv5GOCmaQNOaeUz1%2FiNqYcv79FfMzd19BpDf5mM0zsi2WSwV4AyLBNinKZP8U74G04XS30n6FozqKrJQHDPSowli6WEva8hdx1pdLuYldubFZYqZ%2FQqQXrK0n8QJIlUiOvg8GUon8itPD0iH3i7oqbEw06tF4016i3FR3m9CotmuPM35xUlpuyRLje%2Bwo%2FCn2yMJ%2FQQ9PgO%2FBxog96AzkXRP1mgPXakb3zSP7xQi0Vc8cHos6AmyJnBG3qS9Bslqfrq2EjXc9CQ95Y4U78oKlXUzd4AdM6ugXcheqOXKreuNEIQvDp5Dm51mZvJpUOxzDzb%2FU003cRa00aQ3LXXmWqngKohJvU5VDiEx6B3T%2FtWPHVwV%2B5vr9vmp6vp1%2FHPUlnLfya%2B7%2FeeEmgZ60X6Lp0%2BphkbBXTHG%2FJhO6hRTqoU3yamgQz9Vcs7qljFAyFBhNqlc8AOoELIINNB0pqkR8GbPPYHEKnEgo8qqs2QU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20180621T040940Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=ASIAI4TQW6CNMKJMHAMQ%2F20180621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=abc45d664779c3bc4e2e25183be0ba3fdd9bfc34d3227cb4aeffe1f4885a698e"
+        },
+        "CreationTime": "2018-06-20T11:27:16.590Z",
+        "CompletionTime": "2018-06-20T11:28:18.476Z",
+        "Settings": {}
+    }
+}
+
+Mp3 File in Bucket: https://s3.amazonaws.com/awsmlbket/speech_20180620111512864.mp3
